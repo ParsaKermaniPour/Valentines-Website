@@ -4,8 +4,8 @@ function moveRandomElem(elem) {
   elem.style.left = Math.floor(Math.random() * 90 + 5) + '%';
 }
 
-const moveRandom = document.querySelector('#move-random');
+const noButton = document.querySelector('#no-btn');
 
-moveRandom.addEventListener('mouseenter', (e) => {
+noButton.addEventListener('click', (e) => {
   moveRandomElem(e.target);
 });
